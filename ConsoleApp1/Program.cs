@@ -34,6 +34,7 @@ namespace ConsoleApp1
 
             string altroMessaggio = auto2.kmTagliando(15000);
             Console.WriteLine(altroMessaggio);
+            Console.WriteLine("\n");
             // Console.ReadLine(); // attendo un input
 
             //////////////////////////////////////////////////////////////////
@@ -54,6 +55,7 @@ namespace ConsoleApp1
             // Console.ReadLine();
 
 
+
             Dipendente dpn1 = new Dipendente();
             dpn1.Azienda = "Epicode";
             string message = dpn1.anniEsperienza(8);
@@ -65,7 +67,8 @@ namespace ConsoleApp1
             string message2 = dpn2.anniEsperienza(3);
             Console.WriteLine("Dipendente2 lavora presso: " + dpn2.Azienda + "\n");
             Console.WriteLine(message2 + "\n");
-            Console.ReadLine();
+            // Console.ReadLine();
+
 
 
             Animale animale1 = new Animale();
@@ -85,10 +88,21 @@ namespace ConsoleApp1
             animale3.Razza = "aquila reale";
             animale3.Terrirorio = "montagna";
             Console.WriteLine("animale3 e' un: " + animale3.Genere + " specificatamente un/a " + animale3.Razza + " e vive nel" + animale3.Terrirorio);
+            // Console.ReadLine();
 
 
             Veicolo macchina1 = new Veicolo();
             macchina1.Marca = "mercedes";
+            macchina1.Modello = "classe A";
+            Console.WriteLine("la macchina1 e' una: " + macchina1.Modello + " della " + macchina1.Marca);
+            string msg = macchina1.kmAlLitro(42);
+
+            Veicolo macchina2 = new Veicolo();
+            macchina2.Marca = "fiat";
+            macchina2.Modello = "panda";
+            Console.WriteLine("la macchina2 e' una: " + macchina2.Modello + " della " + macchina2.Marca);
+            string msg2 = macchina2.kmAlLitro(78);
+            Console.ReadLine();
         }
     }
 }

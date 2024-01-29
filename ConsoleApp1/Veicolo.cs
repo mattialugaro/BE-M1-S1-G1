@@ -9,6 +9,7 @@ namespace ConsoleApp1
     public class Veicolo
     {
         private string _marca;
+        private string _modello;
 
         public string Marca
         {
@@ -19,6 +20,18 @@ namespace ConsoleApp1
             set
             {
                 _marca = value;
+            }
+        }
+
+        public string Modello
+        {
+            get
+            {
+                return _modello;
+            }
+            set
+            {
+                _modello = value;
             }
         }
 
